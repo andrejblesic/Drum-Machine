@@ -1,0 +1,80 @@
+:root {
+  font-family: verdana;
+}
+body {
+  background: #f2fec0;
+}
+.mainBox {
+  display: flex;
+  width: 600px;
+  height: 362px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.controlGrid {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  grid-row-gap: 1px;
+  grid-column-gap: 1px;
+}
+.drum-pad {
+  color: rgba(0, 0, 0, 0.75);
+  user-select: none;
+  background: #7587d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px rgba(100, 100, 100, 0.5);
+}
+.soundContainer {
+  height: 40px;
+  width: 90%;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 6px;
+}
+#slider {
+  color: red;
+}
+.controlPanel {
+  box-shadow: 2px 2px 2px rgba(100, 100, 100, 0.5);
+  color: rgba(0, 0, 0, 0.75);
+  margin-left: 1px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: #d8f757;
+  width: calc(100% - 362px);
+  border: 2px solid;
+  border-radius: 4px;
+}
+.controlPanel h1 {
+  margin: 0;
+}
+.controlPanel h3 {
+  margin: 0;
+}
+h1 {
+  pointer-events: none;
+}
+@media (max-width: 800px) {
+  .mainBox {
+    position: relative;
+    top: 10px;
+    width: 362px;
+    height: 502px;
+    flex-direction: column;
+  }
+  .controlPanel {
+    width: 357px;
+    height: 140px;
+  }
+}
