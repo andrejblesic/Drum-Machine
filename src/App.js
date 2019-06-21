@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+//main component containing the input buttons
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -67,6 +68,7 @@ class Main extends React.Component {
   }
 }
 
+//functional component for the control panel
 function ControlPanel(props) {
   return(
     <div id="display" className="controlPanel">
